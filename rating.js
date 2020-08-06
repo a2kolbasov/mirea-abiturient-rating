@@ -4,10 +4,10 @@
 
 "use strict";
 
-let table = document.getElementsByClassName("namesTable")[0].lastElementChild;
+const table = document.getElementsByClassName("namesTable")[0].lastElementChild;
 
 function load() {
-    let students = [];
+    const students = [];
 
     for (let i = 0; i < table.children.length; i++) {
         students.push(table.children[i]);
@@ -16,7 +16,7 @@ function load() {
     return students;
 }
 
-let students = load();
+const students = load();
 
 function clean() {
     while (table.childElementCount > 0) {
@@ -52,7 +52,7 @@ function printAccepted() {
 }
 
 function init() {
-    let buttons = {
+    const buttons = {
         all: document.createElement("button"),
         notToAnother: document.createElement("button"),
         accepted: document.createElement("button"),
